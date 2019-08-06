@@ -2,24 +2,32 @@
 
 #crys1 {
     background: url(../images/crys1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 150px;
     margin: 5px
 }
 
 #crys2 {
     background: url(../images/crys2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 150px;
     margin: 5px
 }
 
 #crys3 {
     background: url(../images/crys3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 150px;
     margin: 5px
 }
 
 #crys4 {
     background: url(../images/crys4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 150px;
     margin: 5px
 }

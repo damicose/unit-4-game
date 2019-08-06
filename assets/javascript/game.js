@@ -1,4 +1,3 @@
-let goalTotal = null
 let userTotal = 0
 let wins = 0
 let losses = 0
@@ -24,6 +23,7 @@ const reset = function () {
     crysVal3 = 1 + Math.floor(Math.random() * ((12 - 1) + 1))
     crysVal4 = 1 + Math.floor(Math.random() * ((12 - 1) + 1))
     goal = 19 + Math.floor(Math.random() * ((120 - 19) + 1))
+    userTotal = 0
     updateGoalTotal()
 }
 
@@ -39,34 +39,76 @@ reset();
 document.getElementById("crys1").addEventListener("click", function () {
     userTotal = userTotal + crysVal1;
     updateCurrentScore();
+    if (userTotal > goal) {
+        losses++;
+        document.getElementById("losses").innerHTML = "Losses: " + losses;
+        alert("You lose!");
+        reset();
+        updateGoalTotal();
+    }
+    
+    else if (userTotal == goal) {
+        wins++;
+        alert("You win!");
+        document.getElementById("wins").innerHTML = "Wins: " + wins;
+        reset();
+        updateGoalTotal();
+    }
 });
 document.getElementById("crys2").addEventListener("click", function () {
     userTotal = userTotal + crysVal2;
     updateCurrentScore();
+    if (userTotal > goal) {
+        losses++;
+        document.getElementById("losses").innerHTML = "Losses: " + losses;
+        alert("You lose!");
+        reset();
+        updateGoalTotal();
+    }
+    
+    else if (userTotal == goal) {
+        wins++;
+        alert("You win!");
+        document.getElementById("wins").innerHTML = "Wins: " + wins;
+        reset();
+        updateGoalTotal();
+    }
 });
 document.getElementById("crys3").addEventListener("click", function () {
     userTotal = userTotal + crysVal3;
     updateCurrentScore();
+    if (userTotal > goal) {
+        losses++;
+        document.getElementById("losses").innerHTML = "Losses: " + losses;
+        alert("You lose!");
+        reset();
+        updateGoalTotal();
+    }
+    
+    else if (userTotal == goal) {
+        wins++;
+        alert("You win!");
+        document.getElementById("wins").innerHTML = "Wins: " + wins;
+        reset();
+        updateGoalTotal();
+    }
 });
 document.getElementById("crys4").addEventListener("click", function () {
     userTotal = userTotal + crysVal4;
     updateCurrentScore();
+    if (userTotal > goal) {
+        losses++;
+        document.getElementById("losses").innerHTML = "Losses: " + losses;
+        alert("You lose!");
+        reset();
+        updateGoalTotal();
+    }
+    
+    else if (userTotal == goal) {
+        wins++;
+        alert("You win!");
+        document.getElementById("wins").innerHTML = "Wins: " + wins;
+        reset();
+        updateGoalTotal();
+    }
 });
-
-//Win condition: userTotal = goalTotal; Lose if userTotal > goalTotal
-if (userTotal > goalTotal) {
-    losses++;
-    document.getElementById("losses").innerHTML = "Losses: " + losses;
-    alert("You lose!");
-    reset();
-    updateGoalTotal();
-}
-
-else if (userTotal == goalTotal) {
-    wins++;
-    alert("You win!");
-    document.getElementById("wins").innerHTML = "Wins: " + wins;
-    reset();
-    updateGoalTotal();
-}
-//Game resets and reassigns all values upon W/L
