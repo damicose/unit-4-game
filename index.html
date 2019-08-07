@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,10 +12,22 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        Instructions Here
+    <div id="title" class="container mb-3">CRYSTAL COLLECTOR</div>
+    <div id="instructions" class="container">
+        <p>
+            You will be shown a random number at the start of the game: this is your target score.
+            <br><br>
+            When you click on a crystal it will add a specific, hidden amount of points to your total score.
+            <br><br>
+            You win if your total score matches the target score. You lose if your score goes above the random number.
+            <br><br>
+            After a win or loss the game will reset with new randomly-generated numbers.
+            <br><br>
+            Good Luck!
+        </p>
+
     </div>
-    <div class="row">
+    <div class="row mt-3 pt-2">
         <div id="crys1" class="col btn btn-lg">
 
         </div>
@@ -29,7 +41,7 @@
 
         </div>
     </div>
-    <div class="container">
+    <div id="trackers" class="container mt-3">
         <p id="goalTotal">Total to Win: </p>
         <p id="userTotal">Current Score: </p>
         <p id="wins"> Wins: 0</p>

@@ -1,33 +1,56 @@
 /* Make purty */
+body {
+background: lightblue;
+
+}
 
 #crys1 {
     background: url(../images/crys1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin: 5px
+    background-size: cover;
+    height: 250px;
+    margin: 5px 5px 5px 25px
 }
 
 #crys2 {
     background: url(../images/crys2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin: 5px
+    background-size: cover;
+    height: 250px;
+    margin: 5px 5px 5px 5px
 }
 
 #crys3 {
     background: url(../images/crys3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin: 5px
+    background-size: cover;
+    height: 250px;
+    margin: 5px 5px 5px 5px
 }
 
 #crys4 {
     background: url(../images/crys4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin: 5px
+    background-size: cover;
+    height: 250px;
+    margin: 5px 25px 5px 5px
+}
+
+#instructions, #trackers {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 17px
+}
+
+#trackers {
+    font-size: 25px;
+    font-weight: bold
+}
+
+#instructions {
+    background: blanchedalmond;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+#title {
+    text-align: center;
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

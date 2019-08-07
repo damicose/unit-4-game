@@ -44,6 +44,7 @@ document.getElementById("crys1").addEventListener("click", function () {
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         alert("You lose!");
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
     
@@ -52,6 +53,7 @@ document.getElementById("crys1").addEventListener("click", function () {
         alert("You win!");
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
 });
@@ -63,6 +65,7 @@ document.getElementById("crys2").addEventListener("click", function () {
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         alert("You lose!");
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
     
@@ -71,6 +74,7 @@ document.getElementById("crys2").addEventListener("click", function () {
         alert("You win!");
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
 });
@@ -82,6 +86,7 @@ document.getElementById("crys3").addEventListener("click", function () {
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         alert("You lose!");
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
     
@@ -90,6 +95,7 @@ document.getElementById("crys3").addEventListener("click", function () {
         alert("You win!");
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
 });
@@ -101,6 +107,7 @@ document.getElementById("crys4").addEventListener("click", function () {
         document.getElementById("losses").innerHTML = "Losses: " + losses;
         alert("You lose!");
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
     
@@ -109,6 +116,7 @@ document.getElementById("crys4").addEventListener("click", function () {
         alert("You win!");
         document.getElementById("wins").innerHTML = "Wins: " + wins;
         reset();
+        updateCurrentScore()
         updateGoalTotal();
     }
 });
